@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "compile": "npx tsc",
+    "postinstall": "npx tsc",
     "dev": "concurrently \"tsc -w\" \"nodemon --config nodemon.json --experimental-modules --es-module-specifier-resolution=node -r dotenv/config ./build/index.js\"",
     "deploy": "npx tsc && node --experimental-modules --es-module-specifier-resolution=node -r dotenv/config build/deploy.js",
     "start": "node --experimental-modules --es-module-specifier-resolution=node -r dotenv/config build/index.js"
