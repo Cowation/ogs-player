@@ -42,6 +42,8 @@ client.on('ready', async () => {
   client.user?.setActivity({ name: 'songs', type: 'LISTENING' });
 
   // Accept incoming sockets
+  app.set('port', (process.env.PORT || 3000));
+
   io.on('connection', (socket) => {
     console.log('New socket connection!');
 
@@ -73,8 +75,12 @@ client.on('ready', async () => {
     });
   });
 
-  server.listen(3000, () => {
-    console.log('Link server now listening on port 3000.');
+  app.get('/', (req, res) => {
+    res.send('hi');
+  });
+
+  server.listen(app.get('PORT'), () => {
+    console.log(`Link server now listening on port ${app.get('PORT')}`);
   });
 });
 
