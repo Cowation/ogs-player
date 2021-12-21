@@ -1,0 +1,25 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 16",
+
+  "compilerOptions": {
+    "outDir": "./build",
+    "rootDir": "./src",
+
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "esnext",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+
+  "include": [
+    "src/**/*",
+    "modules.d.ts"
+  ]
+}
