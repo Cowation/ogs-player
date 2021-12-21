@@ -79,8 +79,8 @@ client.on('ready', async () => {
     res.send('hi');
   });
 
-  server.listen(app.get('PORT'), () => {
-    console.log(`Link server now listening on port ${app.get('PORT')}`);
+  server.listen(app.get('port'), () => {
+    console.log(`Link server now listening on port ${app.get('port')}`);
   });
 });
 
