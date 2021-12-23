@@ -2,7 +2,7 @@
 
 OGs Player is **proprietary software**. Please see the license in `LICENSE` regarding usage.
 
-*Plays tunes better.*
+_Plays tunes better._
 
 ## Features
 
