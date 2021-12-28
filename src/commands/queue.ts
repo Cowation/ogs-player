@@ -9,7 +9,7 @@ export default {
     .toJSON(),
 
   async execute(interaction: CommandInteraction, { player }: CommandData) {
-    let queueMessage = '**QUEUE:**';
+    let queueMessage = '';
     
     const queue = player.getQueue();
     const nowIndex = player.getNowPlayingIndex();
