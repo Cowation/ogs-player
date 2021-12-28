@@ -16,8 +16,8 @@ export default {
 
     for (const [index, song] of queue.entries()) {
       queueMessage += `\n${index === nowIndex ? `**${song.title}**` : song.title}`;
-    } 
+    }
 
-    return interaction.reply({ content: queueMessage, ephemeral: true });
+    return interaction.reply({ content: queueMessage || '**Nothing.**', ephemeral: true });
   }
 };
