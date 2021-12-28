@@ -9,13 +9,13 @@ export default {
     .toJSON(),
 
   async execute(interaction: CommandInteraction, { player }: CommandData) {
-    const queueMessage = '**QUEUE:**';
+    let queueMessage = '**QUEUE:**';
     
     const queue = player.getQueue();
     const nowIndex = player.getNowPlayingIndex();
 
     for (const [index, song] of queue.entries()) {
-      queueMessage.concat(`\n${index === nowIndex ? `**${song.title}**` : song.title}`);
+      queueMessage += `\n${index === nowIndex ? `**${song.title}**` : song.title}`;
     } 
 
     return interaction.reply({ content: queueMessage, ephemeral: true });
