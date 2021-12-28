@@ -30,7 +30,7 @@
 			"\t\t.toJSON(),",
 			"",
 			"\tasync execute(interaction: CommandInteraction, { player }: CommandData) {",
-			"\t\treturn interaction.reply({ content: 'placeholder', ephemeral: true })",
+			"\t\treturn interaction.reply({ content: 'placeholder', ephemeral: true });",
 			"\t}",
 			"};"
 		],
