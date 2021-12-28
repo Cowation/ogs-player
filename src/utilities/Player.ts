@@ -273,6 +273,22 @@ export default class Player {
       return this.queue[this.nowIndex];
     }
   }
+  
+  /**
+   * Gets the currently playing song's index.
+   * @returns {number}
+   */
+  getNowPlayingIndex() {
+    return this.nowIndex;
+  }
+
+  /**
+   * Gets the server queue.
+   * @returns {Array<Song>}
+   */
+  getQueue() {
+    return this.queue;
+  }
 
   /**
    * Sets the volume of the player.
