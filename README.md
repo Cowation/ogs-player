@@ -1,6 +1,6 @@
 # OGs Player
 
-OGs Player is **proprietary software**. Please see the license in `LICENSE` regarding usage.
+OGs Player is open-source software. Please see `LICENSE` regarding usage.
 
 _Plays tunes better._
 
